@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="form.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<title>Form</title>
+	
+  </head>
+  <body>
+    <form name="myForm" action="./result/done.html" method="post">
+      <div class="container">
+        <h1>Form</h1>
+        <p>Please fill in this form </p>
+        <label for="fname"><b>Name</b></label><span class="required">*</span><br>
+        <input type="text" placeholder="Username" name="fname" required />
+		<br>
+		<label for="lname"><b>Password</b></label><span class="required">*</span><br>
+        <input type="pass" placeholder="Password" name="lname" required />
+		<br>
+		<label for="gender"><b>Gender</b></label>
+		<br>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label>
+		<input type="radio" id="other" name="gender" value="other">
+		<label for="other">Other</label>
+		<br>  			
+        <label for="email"><b>Email</b></label><span class="required">*</span>
+		<br>
+        <input type="email" placeholder="abc@gmail.com" name="email" required />
+		<br>
+		<label for="dob"><b> Date of birth</b></label><span class="required">*</span>
+		<br>
+		<td><select name="day">
+<option value="day">DAY</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+<select name="month">
+<option value="month">MONTH</option>
+<option value="jan">JANUARY</option>
+<option value="feb">FEBRUARY</option>
+<option value="mar">MARCH</option>
+<option value="apr">APRIL</option>
+<option value="may">MAY</option>
+<option value="jun">JUNE</option>
+<option value="jul">JULY</option>
+<option value="aug">AUGUST</option>
+<option value="sep">SEPTEMBER</option>
+<option value="oct">OCTOBER</option>
+<option value="nov">NOVEMBER</option>
+<option value="dec">DECEMBER</option>
+</select>
+<select name="year">
+<option value="year">YEAR</option>
+<option value="1986">1986</option>
+<option value="1987">1987</option>
+<option value="1988">1988</option>
+<option value="1989">1989</option>
+<option value="1990">1990</option>
+<option value="1991">1991</option>
+<option value="1992">1992</option>
+<option value="1993">1993</option>
+<option value="1994">1994</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+<option value="2005">2005</option>
+<option value="2006">2006</option>
+<option value="2007">2007</option>
+<option value="2008">2008</option>
+<option value="2009">2009</option>
+<option value="2010">2010</option>
+<option value="2011">1980</option>
+<option value="2012">1981</option>
+<option value="2013">1982</option>
+<option value="2014">1983</option>
+</select></td></tr>
+<br>
+
+<label for="language"><b>LANGUAGES KNOWN</b></label><span class="required">*</span>
+<td>
+<br>
+<input type="checkbox" value="eng" name="lang" />ENGLISH
+<input type="checkbox" value="tel" name="lang" />TELUGU
+<input type="checkbox" value="hin" name="lang" />HINDI
+<input type="checkbox" value="tam" name="lang" />TAMIL
+</td></tr>
+<tr>
+<br>
+		<label for="phno"><b>Phone Number</b></label><span class="required">*</span>
+		<br>
+        <input type="text" placeholder="123456789" name="phno" required />
+		<br>
+		
+        <label for="address"><b>Address</b></label><span class="required">*</span>
+		<br>
+		<textarea id="address" name="address" rows="4" cols="50" required></textarea>
+        
+        <p>
+          By creating an account you agree to our
+          <a href="#">Terms & Privacy</a>.
+        </p>
+		<input type="reset" class="registerbtn" value="Reset">
+        <button type="submit" class="registerbtn" >Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
